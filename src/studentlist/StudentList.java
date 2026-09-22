@@ -17,7 +17,7 @@ public class StudentList {
         Student s1 = new Student(101, "Griffin");
         Student s2 = new Student(102, "Jacop");
         Student s3 = new Student(103, "Marcus");
-        Student studentList [] = new Student[3]; 
+        Student studentList [] = new Student[5]; 
         studentList[0] = s1;
         studentList[1] = s2;
         studentList[2] = s3;
