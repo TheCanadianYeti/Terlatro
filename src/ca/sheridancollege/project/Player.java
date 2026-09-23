@@ -39,6 +39,8 @@ public abstract class Player {
     public void setName(String name) {
         this.name = name;
     }
+    
+    //This is a comment
 
     /**
      * The method to be overridden when you subclass the Player class with your specific type of Player and filled in
