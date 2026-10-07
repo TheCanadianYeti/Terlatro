@@ -6,6 +6,7 @@
 package ca.sheridancollege.project;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 /**
  * The class that models your game. You should create a more specific child of this class and instantiate the methods
@@ -14,14 +15,25 @@ import java.util.ArrayList;
  * @author dancye
  * @author Paul Bonenfant Jan 2020
  */
-public abstract class Game {
+public class Game {
 
     private final String name;//the title of the game
     private ArrayList<Player> players;// the players of the game
+    private int score; //Does NOT require a setter. score is automatically incremented.
+    private double mult;
+    
+    private Scanner inp = new Scanner(System.in);
 
     public Game(String name) {
         this.name = name;
         players = new ArrayList();
+    }
+    
+    public int getScore(){
+        return score;
+    }
+    public double getMult(){
+        return mult;
     }
 
     /**
@@ -48,11 +60,21 @@ public abstract class Game {
     /**
      * Play the game. This might be one method or many method calls depending on your game.
      */
-    public abstract void play();
+    public void play(){
+        System.out.println("Score: " + getScore());
+        System.out.println("Mult: " + getMult() + "\n");
+        
+        System.out.println("Jokers: "); //!!NOT FULLY IMPLEMENTED!!
+        System.out.println("Hand: "); //!!NOT FULLY IMPLEMENTED!!
+        System.out.println("-----------------------------");
+        inp.nextLine("Type what cards you want to select from your hand."); //Needs a variable assigned to.
+        
+    }
     
     /**
      * When the game is over, use this method to declare and display a winning player.
      */
-    public abstract void declareWinner();
-
+    public void declareWinner(){
+    }    
 }//end class
+    
