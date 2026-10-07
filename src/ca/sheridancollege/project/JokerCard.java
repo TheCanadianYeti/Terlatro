@@ -19,17 +19,13 @@ public class JokerCard extends Card {
     private double xMult;
     private int chipBonus;
 
-    public JokerCard(String name, String description, int cost, Rarity rarity, int multBonus, double xMult, int chipBonus) {
-        this(name, description, cost, rarity, multBonus, xMult, chipBonus, null);
-    }
-
-    public JokerCard(String name, String description, int cost, Rarity rarity, int multBonus, double xMult, int chipBonus, String artFilePath) {
-        super(name, description, cost, artFilePath);
-        this.rarity = (rarity == null) ? Rarity.COMMON : rarity;
-        this.multBonus = Math.max(0, multBonus);
-        this.xMult = Math.max(1.0, xMult);
-        this.chipBonus = Math.max(0, chipBonus);
-    }
+   public JokerCard(String name, String description, int cost, Rarity rarity, int multBonus, double xMult, int chipBonus, String artFilePath) {
+    super(name, description, cost, artFilePath);
+    this.rarity = (rarity == null) ? Rarity.COMMON : rarity;
+    this.multBonus = Math.max(0, multBonus);
+    this.xMult = Math.max(1.0, xMult);
+    this.chipBonus = Math.max(0, chipBonus);
+}
 
     public Rarity getRarity() {
         return rarity;

@@ -6,20 +6,15 @@ package ca.sheridancollege.project;
 
 /**
  *
- * @author marcu
+ * @author Marcus
  */
 public class Main {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        //Test Code for the Implementation of the Card Parent Class and the JokerCard/PlayingCard Child Classes
         Card card = new PlayingCard(PlayingCard.Suit.SPADES, PlayingCard.Rank.ACE);
-        Card joker = new JokerCard("Joker", "+4 Mult", 2, JokerCard.Rarity.COMMON, 4, 1.0, 0);
+        Card joker = new JokerCard("Joker", "+4 Mult", 2, JokerCard.Rarity.COMMON, 4, 1.0, 0, null);
 
         System.out.println(card);
         System.out.println(joker);
     }
-    
 }
