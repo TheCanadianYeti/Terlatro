@@ -51,5 +51,12 @@ public class GroupOfCards {
     public void setSize(int size) {
         this.size = size;
     }
+    //
+    public void standerdDeck(){
+        for(PlayingCard.Rank r: PlayingCard.Rank.values()){
+            for(PlayingCard.Suit s: PlayingCard.Suit.values()){
+                cards.add(new PlayingCard(s, r));
+            }
+    }
 
 }//end class
