@@ -57,6 +57,6 @@ public class GroupOfCards {
             for(PlayingCard.Suit s: PlayingCard.Suit.values()){
                 cards.add(new PlayingCard(s, r));
             }
+        }
     }
-
 }//end class
