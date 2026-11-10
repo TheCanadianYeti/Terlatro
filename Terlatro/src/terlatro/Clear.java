@@ -20,3 +20,9 @@ public class Clear {
         }
     }
 }
+
+/*
+
+Implement with Clear.screen();
+
+*/
