@@ -52,7 +52,7 @@ public class GroupOfCards {
         this.size = size;
     }
     //
-    public void standerdDeck(){
+    public void standardDeck(){
         for(PlayingCard.Rank r: PlayingCard.Rank.values()){
             for(PlayingCard.Suit s: PlayingCard.Suit.values()){
                 cards.add(new PlayingCard(s, r));
