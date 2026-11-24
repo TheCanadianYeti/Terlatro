@@ -1,0 +1,29 @@
+# NetBeans
+**/nbproject/private/
+**/nbproject/Makefile-*.mk
+**/nbproject/Package-*.bash
+nbproject/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# Compiled Java class files
+*.class
+
+# Package Files
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# OS & Editor Files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.iml
